@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --hero-green: #93E735;
+    --green-markdown: #6A9C31;
+    --black: #1A1F23;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+/* ---- default styles ---- */
+
+figure img{
+    height: 100%;
+}
+
+.txt-box p{
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input{
+    border: none;
+}
+
+button{
+    border: none;
+}
+
+/* ---- mobile first ---- */
+
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20%;
+    align-items: center;
+    position: relative;
+
+    padding: 10% 10% 0 10%;
+    height: 100vh;
+    background: url("../img/hero-section-bg.svg") left top no-repeat;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7%;
+}
+
+nav .logo{
+    height: 100%;
+}
+
+.bg-disco{
+    position: absolute;
+    height: 48%;
+    top: 20%;
+    left: 0;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.txtHero-container{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.txtHero{
+    color: white;
+}
+
+.txtHero h1{
+    width: 70%;
+    font-size: 2.3rem;
+    line-height: 104%;
+}
+
+.txtHero h1 .hero-span{
+    color: var(--hero-green);
+}
+
+.txtHero p{
+    font-weight: lighter;
+}
+
+.hero-search{
+    display: flex;
+    width: fit-content;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.13);
+    box-shadow: 10px 0px 50px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);
+    border-radius: 7px;
+}
+
+.hero-search input{
+    padding: 18px;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.hero-search input::placeholder{/* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-weight: lighter;
+    color: var(--hero-green);
+}
+
+.hero-search input:-ms-input-placeholder{/* Internet Explorer 10-11 */
+    font-weight: lighter;
+    color: var(--hero-green);
+}
+
+.hero-search input::-ms-input-placeholder{/* Microsoft Edge */
+    font-weight: lighter;
+    color: var(--hero-green);
+}
+
+.hero-search button{
+    padding: 15px;
+    background-color: var(--green-markdown);
+}
+
+/* --> cards from hero section */
+.data-cards-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.1));
+}
+
+.data-cards-container .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.data-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    background-color: white;
+}
