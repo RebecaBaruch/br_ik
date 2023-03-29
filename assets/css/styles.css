@@ -15,10 +15,19 @@
     /* font-family: 'Open Sans', sans-serif; */
 }
 
-/* ---- default styles ---- */
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
 
+/* ---- default styles ---- */
 figure img{
     height: 100%;
+}
+
+.txt-box h1{
+    font-size: 2.5rem;
+    color: var(--black);
 }
 
 .txt-box p{
@@ -34,8 +43,21 @@ button{
     border: none;
 }
 
-/* ---- mobile first ---- */
+.section-header{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
+.section-header h2{
+    font-weight: 400;
+    color: var(--green-markdown);
+}
+
+/* ---- mobile first ---- */
 main{
     display: flex;
     justify-content: space-between;
@@ -90,6 +112,7 @@ nav .logo{
     width: 70%;
     font-size: 2.3rem;
     line-height: 104%;
+    color: white;
 }
 
 .txtHero h1 .hero-span{
@@ -167,4 +190,59 @@ nav .logo{
     height: 180px;
     text-align: center;
     background-color: white;
+}
+
+.sobre-nos-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 85%;
+}
+
+.sobre-nos-section .txt-box{
+    padding: 10% 10% 0 10%;
+}
+
+.txtImg01 figure,
+.txtImg02 figure{
+    width: 100%;
+    overflow: hidden;
+}
+
+.txtImg02 figure{
+    text-align: right;
+}
+
+.txtImg01 figure img,
+.txtImg02 figure img{
+    width: 70%;
+}
+
+.txtImg01 figure img{
+    border-radius: 0 20px 20px 0;
+}
+
+.txtImg02 figure img{
+    border-radius: 20px 0 0 20px;
+}
+
+.txtImg-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.txtImg02{
+    display: flex;
+    justify-content: right;
+}
+
+.txtImg02 span{
+    padding: 0 10% 0 10%;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--green-markdown)
 }
