@@ -25,9 +25,22 @@ figure img{
     height: 100%;
 }
 
+.txt-box{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .txt-box h1{
     font-size: 2.5rem;
     color: var(--black);
+}
+
+.txt-box h1 span {
+    padding: 5px;
+    color: white;
+    background-color: var(--green-markdown);
 }
 
 .txt-box p{
@@ -43,6 +56,8 @@ button{
     border: none;
 }
 
+/*------------------------------------------*/
+
 .section-header{
     display: flex;
     justify-content: start;
@@ -55,6 +70,14 @@ button{
 .section-header h2{
     font-weight: 400;
     color: var(--green-markdown);
+}
+
+.header-dark-section h2{
+    color: var(--hero-green);
+}
+
+.txtHero h1 span{
+    background-color: transparent;
 }
 
 /* ---- mobile first ---- */
@@ -192,12 +215,13 @@ nav .logo{
     background-color: white;
 }
 
+/* seção 02 */
 .sobre-nos-section{
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 50px;
-    margin-top: 85%;
+    margin-top: 300px;
 }
 
 .sobre-nos-section .txt-box{
@@ -245,4 +269,154 @@ nav .logo{
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--green-markdown)
+}
+
+/* seção 03 */
+.oq-fazemos-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 130px 10%;
+    margin-top: 130px;
+    color: white;
+    background-color: var(--black);
+}
+
+.oq-fazemos-section h1{
+    color: white;
+}
+
+.oq-fazemos-section .txt-box video{
+    background-color: black;
+}
+
+/* seção 04 */
+.tipos-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 0 30px 10%;
+    margin-top: 130px;
+    width: 100%;
+}
+
+.tipos-section .txt-box{
+    padding: 0 10% 0 0;
+}
+
+.imovel-cards-container{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+    overflow: overlay;
+}
+
+.imovel-card{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 10px;
+    align-items: end;
+    padding: 40px 25px;
+    width: 250px;
+    height: 350px;
+    color: white;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--green-markdown);
+}
+
+.urban-card{
+    background: no-repeat url("../img/imovel-bgCard01.svg") 100%;
+}
+
+.rural-card{
+    margin-right: 30px;
+    background: no-repeat url("../img/imovel-bgCard02.svg") 100%;
+}
+
+/*seção 05*/
+.parceiros-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 130px 10%;
+    margin-top: 130px;
+    color: white;
+    background-color: var(--black);
+}
+
+.parceiros-section h1{
+    color: white;
+}
+
+.parceiros-carousel-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.parceiro-card{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: end;
+    padding: 20px 30px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(76, 76, 76);
+}
+
+.parceiro-card .parceiro-content{
+    display: flex;
+    gap: 15px;
+}
+
+.parceiro-card .parceiro-logo{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.parceiro-card  article h1{
+    font-size: 1.4rem;
+}
+
+.parceiro-card article h2{
+    font-size: 1rem;
+}
+
+.carousel-stepper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-stepper .stepper{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--hero-green);
+    border-radius: 50%;
+}
+
+.carousel-stepper .marked-stepper:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    
+    background: var(--hero-green);
 }
