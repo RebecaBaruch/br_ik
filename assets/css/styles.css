@@ -566,5 +566,36 @@ nav .logo{
 
 /*seção 08*/
 footer{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 53px;
+    align-items: center;
+    padding: 130px 10%;
+    color: white;
     background-color: var(--black);
+}
+
+footer .info-row{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+footer .info-row div{
+    width: 100%;
+}
+
+footer .info-row h1{
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+footer .info-row02  div figure{
+    display: flex;
+    justify-content: start;
+    gap: 13px;
+    align-items: center;
 }

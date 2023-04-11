@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Br_ik - Gerenciamento de lotes e loteamentos</title>
+    
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 </head>
 <body>
     <main>
@@ -14,6 +16,17 @@
             <figure class="logo">
                 <img src="./assets/img/Logo.svg" alt="Brick logo">
             </figure>
+            <div class="mobile__menu" onclick="mobileNavBar()">
+                <div class="line1"></div>
+                <div class="line2"></div>                                                                                    
+                <div class="line3"></div>
+            </div>
+            <ul class="nav__links">
+                <li><a href="#about" onclick="mobileNavBar()">Quem somos</a></li>
+                <li><a href="#projects" onclick="mobileNavBar()">Projetos</a></li>
+                <li><a href="#team" onclick="mobileNavBar()">Nosso Time</a></li>
+                <li><a href="#services" onclick="mobileNavBar()">Serviços</a></li>
+            </ul>
             <ul>
                 <li>menu</li>
             </ul>
@@ -296,24 +309,25 @@
                 <figure>
                     <!-- instagram -->
                     <a href="#">
-                        <img src="" alt="">
+                        <img src="./assets/img/instagram-icon.svg" alt="Ícone do insta">
                     </a>
                     <!-- linkedin -->
                     <a href="#">
-                        <img src="" alt="">
+                        <img src="./assets/img/linkedin-icon.svg" alt="Ícone do Linkedin">
                     </a>
                     <!-- facebook -->
                     <a href="#">
-                        <img src="" alt="">
+                        <img src="./assets/img/fb-icon.svg" alt="Ícone do Facebook">
                     </a>
                     <!-- twitter -->
                     <a href="#">
-                        <img src="" alt="">
+                        <img src="./assets/img/tt-icon.svg" alt="ícone do Twitter">
                     </a>
                 </figure>
             </div>
         </div>
     </footer>
 
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
