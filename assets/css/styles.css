@@ -426,7 +426,7 @@ li a:hover {
     align-items: center;
     width: 100%;
     overflow-x: scroll;
-    overflow: overlay;
+    /* overflow: overlay; */
 }
 
 .imovel-card{
@@ -440,8 +440,8 @@ li a:hover {
     height: 350px;
     color: white;
 
-    scrollbar-width: thin;
-    scrollbar-color: var(--green-markdown);
+    /* scrollbar-width: thin; */
+    /* scrollbar-color: var(--green-markdown); */
 }
 
 .urban-card{
