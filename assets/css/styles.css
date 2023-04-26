@@ -106,7 +106,7 @@ nav .logo{
 }
 
 /*-- BURGER ----------------------------------*/
-.menu{
+/* .menu{
     position: relative;
     top: 13px;
     height: 100%;
@@ -213,11 +213,9 @@ li a:hover {
     width: 520px;
     height: 460px;
     transform: translate(-60%,-30%);
-}
+} */
 
 /*------------------------------------------*/
-
-
 .bg-disco{
     position: absolute;
     height: 48%;
@@ -240,13 +238,12 @@ li a:hover {
 }
 
 .txtHero{
+    width: 94%;
     color: white;
 }
 
 .txtHero h1{
-    width: 70%;
     font-size: 2.3rem;
-    line-height: 104%;
     color: white;
 }
 
@@ -327,7 +324,7 @@ li a:hover {
     background-color: white;
 }
 
-/* seção 02 */
+/* seção 02 ---------------------------------------*/
 .sobre-nos-section{
     display: flex;
     justify-content: center;
@@ -710,4 +707,251 @@ footer .info-row02  div figure{
     justify-content: start;
     gap: 13px;
     align-items: center;
+}
+
+/*tablet response*/
+@media only screen and (min-width: 600px) {
+    /*hero section*/
+    .txtHero{
+        width: 90%;
+    }
+
+    .txtHero h1{
+        width: 100%;
+        font-size: 3.3rem;
+    }
+    
+    .txtHero p{
+        font-size: 1.7rem;
+    }
+    
+    .hero-search input{
+        padding: 37px;
+        font-size: 1.7rem;
+    }
+    
+    .hero-search button{
+        padding: 33px;
+    }
+
+    /* 2nd section ------------------- */
+    .sobre-nos-section{
+        margin-top: 70px;
+    }
+    
+    .txtImg02 span{
+        width: 70%;
+        font-size: 1.8rem;
+    }
+
+    /*4th section ------------------- */
+    .imovel-cards-container{
+        gap: 53px;
+        overflow-x: hidden;
+    }
+    
+    .imovel-card{
+        padding: 40px 25px;
+        width: 293px;
+        height: 450px;
+        color: white;
+    }
+
+    /*7th section --------------------------------- */
+    .contato-section{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        gap: 53px;
+        align-items: center;
+    }
+
+    .contato-section h1{
+        font-size: 2.7rem;
+    }
+
+    .contato-section p{
+        font-size: 1.4rem;
+    }
+
+    .contato-section figure{
+        position: relative;
+        width: 130%;
+        height: 20px;
+    }
+
+    .contato-section figure img{
+        top: -30px;
+        left: -14%;
+        height: 330%;
+    }
+
+    .contato-section form input{
+        height: 63px;
+        font-size: 1.3rem;
+    }
+
+    .contato-section form textarea{
+        height: 130px;
+        resize: none;
+        font-size: 1.3rem;
+    }
+
+    .contato-section form button{
+        font-size: 1.3rem;
+        height: 83px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /*hero section*/
+    main{
+        padding: 5% 10% 0 10%;
+    }
+
+    .txtHero{
+        width: 50%;
+    }
+    
+    .txtHero h1{
+        font-size: 3.3rem;
+    }
+
+    .txtHero p{
+        font-size: 1.5rem;
+    }
+
+    .hero-search input{
+        padding: 23px;
+        font-size: 1rem;
+    }
+
+    .hero-search button{
+        padding: 23px;
+    }
+
+    /* 2nd section ------------------- */
+    .sobre-nos-section{
+        flex-direction: row;
+        gap: 130px;
+        align-items: end;
+        margin-top: 273px;
+        padding: 10% 10% 0 10%;
+    }
+
+    .sobre-nos-section .txt-box{
+        padding: 0;
+    }
+
+    .txtImg-container{
+        width: 40%;
+    }
+    
+    .txtImg01 figure,
+    .txtImg02 figure{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .txtImg02 figure{
+        text-align: right;
+    }
+    
+    .txtImg01 figure img,
+    .txtImg02 figure img{
+        width: 100%;
+    }
+    
+    .txtImg01 figure img,
+    .txtImg02 figure img{
+        border-radius: 20px;
+    }
+    
+    .txtImg-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .txtImg02{
+        display: flex;
+        justify-content: right;
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+    
+    .txtImg02 span{
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    /*4th section ------------------- */
+    .imovel-cards-container{
+        gap: 53px;
+        overflow-x: hidden;
+    }
+    
+    .imovel-card{
+        padding: 70px 53px;
+        width: 493px;
+        height: 503px;
+        color: white;
+    }
+
+    .imovel-card h1{
+        font-size: 2rem;
+    }
+
+    /*7th section --------------------------------- */
+    .contato-section{
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        gap: 53px;
+        align-items: center;
+    }
+
+    .contato-section .txt-box,
+    .contato-section form{
+        width: 40%;
+    }
+
+    .contato-section h1{
+        font-size: 2.7rem;
+    }
+
+    .contato-section p{
+        font-size: 1.4rem;
+    }
+
+    .contato-section figure{
+        bottom: 0;
+        position: relative;
+        width: 130%;
+        height: 20px;
+    }
+
+    .contato-section figure img{
+        bottom: -30px;
+        left: -14%;
+        height: 330%;
+    }
+
+    .contato-section form input{
+        height: 63px;
+        font-size: 1.3rem;
+    }
+
+    .contato-section form textarea{
+        height: 130px;
+        resize: none;
+        font-size: 1.3rem;
+    }
+
+    .contato-section form button{
+        font-size: 1.3rem;
+        height: 83px;
+    }
 }
