@@ -18,6 +18,7 @@
 body{
     width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* ---- default styles ---- */
@@ -709,6 +710,32 @@ footer .info-row02  div figure{
     align-items: center;
 }
 
+/* 360px */
+@media only screen and (min-width: 360px) {
+    /* 2nd section ------------------- */
+    .sobre-nos-section{
+        margin-top: 370px;
+    }
+    
+    .txtImg02 span{
+        width: 70%;
+        font-size: 1.8rem;
+    }
+}
+
+/* 412px */
+@media only screen and (min-width: 412px) {
+    /* 2nd section ------------------- */
+    .sobre-nos-section{
+        margin-top: 233px;
+    }
+    
+    .txtImg02 span{
+        width: 70%;
+        font-size: 1.8rem;
+    }
+}
+
 /*tablet response*/
 @media only screen and (min-width: 600px) {
     /*hero section*/
@@ -762,7 +789,7 @@ footer .info-row02  div figure{
         display: flex;
         justify-content: start;
         flex-direction: column;
-        gap: 53px;
+        gap: 93px;
         align-items: center;
     }
 
@@ -781,9 +808,9 @@ footer .info-row02  div figure{
     }
 
     .contato-section figure img{
-        top: -30px;
-        left: -14%;
-        height: 330%;
+        top: 23px;
+        left: -24%;
+        height: 303%;
     }
 
     .contato-section form input{
@@ -801,13 +828,129 @@ footer .info-row02  div figure{
         font-size: 1.3rem;
         height: 83px;
     }
+
 }
+
+/*tablet response*/
+@media only screen and (min-width: 768px) {
+    /*hero section*/
+    .txtHero{
+        width: 90%;
+    }
+
+    .txtHero h1{
+        width: 80%;
+        font-size: 3rem;
+    }
+    
+    .txtHero p{
+        font-size: 1.3rem;
+    }
+    
+    .hero-search input{
+        padding: 23px;
+        font-size: 1.3rem;
+    }
+    
+    .hero-search button{
+        padding: 23px;
+    }
+
+    /* 2nd section ------------------- */
+    .sobre-nos-section{
+        margin-top: 230px;
+    }
+    
+    .txtImg02 span{
+        width: 70%;
+        font-size: 1.8rem;
+    }
+
+    /*4th section ------------------- */
+    .imovel-cards-container{
+        gap: 53px;
+        overflow-x: hidden;
+    }
+    
+    .imovel-card{
+        padding: 40px 25px;
+        width: 293px;
+        height: 450px;
+        color: white;
+    }
+
+    /*7th section --------------------------------- */
+    .contato-section{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        gap: 93px;
+        align-items: center;
+    }
+
+    .contato-section h1{
+        font-size: 2.7rem;
+    }
+
+    .contato-section p{
+        font-size: 1.4rem;
+    }
+
+    .contato-section figure{
+        position: relative;
+        width: 130%;
+        height: 20px;
+    }
+
+    .contato-section figure img{
+        top: 23px;
+        left: -24%;
+        height: 303%;
+    }
+
+    .contato-section form input{
+        height: 63px;
+        font-size: 1.3rem;
+    }
+
+    .contato-section form textarea{
+        height: 130px;
+        resize: none;
+        font-size: 1.3rem;
+    }
+
+    .contato-section form button{
+        font-size: 1.3rem;
+        height: 83px;
+    }
+
+}
+
+/* 800px */
+@media only screen and (min-width: 800px) {
+    /* 2nd section ------------------- */
+    .sobre-nos-section{
+        margin-top: 70px;
+    }
+    
+    .txtImg02 span{
+        width: 70%;
+        font-size: 1.8rem;
+    }
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     /*hero section*/
     main{
         padding: 5% 10% 0 10%;
+    }
+    
+    .bg-disco{
+        height: 78%;
+        top: 14%;
+        left: -5%;
     }
 
     .txtHero{
@@ -888,15 +1031,28 @@ footer .info-row02  div figure{
     }
 
     /*4th section ------------------- */
+    .tipos-section{
+        padding: 3px 10% 3px 10%;
+        width: 100%;
+    }
+    
+    .tipos-section .txt-box{
+        padding: 0;
+    }
+    
     .imovel-cards-container{
-        gap: 53px;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0px;
+        align-items: center;
+        width: 100%;
         overflow-x: hidden;
     }
     
     .imovel-card{
         padding: 70px 53px;
-        width: 493px;
-        height: 503px;
+        width: 533px;
+        height: 473px;
         color: white;
     }
 
@@ -906,11 +1062,9 @@ footer .info-row02  div figure{
 
     /*7th section --------------------------------- */
     .contato-section{
-        display: flex;
         justify-content: start;
         flex-direction: row;
-        gap: 53px;
-        align-items: center;
+        align-items: start;
     }
 
     .contato-section .txt-box,
@@ -919,39 +1073,64 @@ footer .info-row02  div figure{
     }
 
     .contato-section h1{
-        font-size: 2.7rem;
+        font-size: 3rem;
     }
 
     .contato-section p{
-        font-size: 1.4rem;
-    }
-
-    .contato-section figure{
-        bottom: 0;
-        position: relative;
-        width: 130%;
-        height: 20px;
+        font-size: 1.5rem;
     }
 
     .contato-section figure img{
-        bottom: -30px;
-        left: -14%;
-        height: 330%;
+        top: 33px;
+        left: -53%;
+        height: 353%;
     }
 
     .contato-section form input{
         height: 63px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .contato-section form textarea{
         height: 130px;
         resize: none;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .contato-section form button{
-        font-size: 1.3rem;
-        height: 83px;
+        font-size: 1.2rem;
+        height: 73px;
     }
+
+    /*8th section (footer) ----------------*/
+    footer{
+        display: flex;
+        justify-content: start;
+        flex-direction: row-reverse;
+        gap: 53px;
+        align-items: start;
+        padding: 130px 10%;
+        color: white;
+        background-color: var(--black);
+    }
+
+    footer .info-row{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        height: 203px;
+    }
+
+    footer .info-row01{
+        order: 1;
+    }
+
+    footer .brand-desc p{
+        margin-top: 30px;
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
+
 }
