@@ -106,117 +106,8 @@ nav .logo{
     height: 100%;
 }
 
-/*-- BURGER ----------------------------------*/
-/* .menu{
-    position: relative;
-    top: 13px;
-    height: 100%;
-    z-index: 2;
-}
-
-.nav-bur{
-    position: absolute;
-    top: 37px;
-    right: 0;
-    transition: 0.3s ease;
-    display: none;
-}
-
-.burger{
-    width: 45px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.burger-bar {
-    height: 5px;
-    width: 80%;
-    background-color: white;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-
-.bar01{
-    transform: translateY(-4px);
-}
-  
-.bar03{
-    transform: translateY(4px);
-}
-
-.menu-bg{
-    position: absolute;
-    top: 170px;
-    left: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.97);
-    transition: 0.3s ease;
-}
-
-.change-bg{
-    position: fixed;
-    width: 400px !important;
-    height: 110vh !important;
-    transform: translate(-10%,-10%);
-}
-
-ul{
-    position: fixed;
-    right: 40px;
-    padding: 44px 22px;
-}
-  
-li{
-    list-style: none;
-    padding: 12px 0;
-}
-  
-li a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-  
-li a:hover {
-    font-weight: bold;
-}
-  
-.menu-bg{
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    transition: 0.3s ease;
-}
-  
-.change{
-    display: block;
-}
-  
-.change .bar {
-    background-color: white;
-}
-  
-.change .bar01 {
-    transform: translateY(4px) rotateZ(-45deg);
-}
-  
-.change .bar02 {
-    opacity: 0;
-}
-  
-.change .bar03 {
-    transform: translateY(-6px) rotateZ(45deg);
-}
-  
-.change-bg {
-    width: 520px;
-    height: 460px;
-    transform: translate(-60%,-30%);
-} */
-
 /*------------------------------------------*/
+/*  Section Hero */
 .bg-disco{
     position: absolute;
     height: 48%;
@@ -271,6 +162,8 @@ li a:hover {
     padding: 18px;
     font-size: 1rem;
     background-color: transparent;
+    outline: none;
+    color: white;
 }
 
 .hero-search input::placeholder{/* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -454,6 +347,7 @@ li a:hover {
 
 /*seção 05*/
 .parceiros-section{
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -470,8 +364,16 @@ li a:hover {
 
 .parceiros-carousel-container{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 40px;
+    align-items: center;
+    width: 80%;
+}
+
+.parceiros-cards-container{
+    display: flex;
+    flex-direction: row;
 }
 
 .parceiro-card{
@@ -480,7 +382,7 @@ li a:hover {
     flex-direction: row;
     align-items: end;
     padding: 20px 30px;
-    width: 300px;
+    width: 300px !important;
     height: 400px;
     background-color: rgb(76, 76, 76);
 }
@@ -505,31 +407,42 @@ li a:hover {
     font-size: 1rem;
 }
 
-.carousel-stepper{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* pagination */
+.swiper-pagination{
+    position: absolute;
+    bottom: 30px;
 }
-
-.carousel-stepper .stepper{
+  
+.swiper-pagination-bullet{
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     border: 2px solid var(--hero-green);
     border-radius: 50%;
+    background: var(--hero-green);
+    --swiper-pagination-bullet-inactive-opacity: 0.1;
+}
+  
+.swiper-button-next, 
+.swiper-button-prev{
+    position: absolute;
+    top: 63%;   
+    opacity: 0.7;
+    color: var(--hero-green);
+    transition: all 0.3s ease;
 }
 
-.carousel-stepper .marked-stepper:after{
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 75%;
-    height: 75%;
-    border-radius: 50%;
-    
-    background: var(--hero-green);
+.swiper-button-prev{
+    left: 10%;
+}
+
+.swiper-button-next{
+    right: 10%;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: var(--hero-green);
 }
 
 /*seção 06*/

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Br_ik - Gerenciamento de lotes e loteamentos</title>
     
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
 </head>
@@ -188,9 +190,11 @@
             </p>
         </div>
 
-        <div class="parceiros-carousel-container">
-            <div class="parceiros-cards-container">
-                <div class="parceiro-card">
+
+        <div class="parceiros-carousel-container swiper mySwiper container">
+            <div class="parceiros-cards-container swiper-wrapper content">
+                <!-- car01 -->
+                <div class="parceiro-card swiper-slide">
                     <div class="parceiro-content">
                         <figure class="parceiro-logo">
                             <img src="" alt="">
@@ -208,15 +212,127 @@
                             </figure>
                         </article>
                     </div>
+                    
                 </div>
+                <!-- car02 -->
+                <div class="parceiro-card swiper-slide">
+                    <div class="parceiro-content">
+                        <figure class="parceiro-logo">
+                            <img src="" alt="">
+                        </figure>
+                        <article>
+                            <h1>Jardim Europa</h1>
+                            <h2>Registro, SP</h2>
+                            <figure>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                    </div>
+                    
+                </div>
+                <!-- car03 -->
+                <div class="parceiro-card swiper-slide">
+                    <div class="parceiro-content">
+                        <figure class="parceiro-logo">
+                            <img src="" alt="">
+                        </figure>
+                        <article>
+                            <h1>Jardim Europa</h1>
+                            <h2>Registro, SP</h2>
+                            <figure>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                    </div>
+                    
+                </div>
+                <!-- car04-->
+                <div class="parceiro-card swiper-slide">
+                    <div class="parceiro-content">
+                        <figure class="parceiro-logo">
+                            <img src="" alt="">
+                        </figure>
+                        <article>
+                            <h1>Jardim Europa</h1>
+                            <h2>Registro, SP</h2>
+                            <figure>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                    </div>
+                    
+                </div>
+                <!-- car05-->
+                <div class="parceiro-card swiper-slide">
+                    <div class="parceiro-content">
+                        <figure class="parceiro-logo">
+                            <img src="" alt="">
+                        </figure>
+                        <article>
+                            <h1>Jardim Europa</h1>
+                            <h2>Registro, SP</h2>
+                            <figure>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                    </div>
+                    
+                </div>
+                <!-- car06 -->
+                <div class="parceiro-card swiper-slide">
+                    <div class="parceiro-content">
+                        <figure class="parceiro-logo">
+                            <img src="" alt="">
+                        </figure>
+                        <article>
+                            <h1>Jardim Europa</h1>
+                            <h2>Registro, SP</h2>
+                            <figure>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </figure>
+                        </article>
+                    </div>
+                    
+                </div>
+               
             </div>
 
-            <div class="carousel-stepper">
+            <!-- <div class="carousel-stepper">
                 <div class="stepper marked-stepper"></div>
                 <div class="stepper"></div>
                 <div class="stepper"></div>
-            </div>
+            </div> -->
+
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-pagination"></div>
     </section>
 
     <!-- seção 06 -->
@@ -338,5 +454,28 @@
     </footer>
 
     <script src="./assets/js/app.js "></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.2.4/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 43,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+
+
 </body>
 </html>
