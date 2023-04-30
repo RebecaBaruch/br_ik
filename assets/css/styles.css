@@ -359,7 +359,7 @@ nav .logo{
 }
 
 .parceiros-section h1{
-    color: white;
+    color: white !important;
 }
 
 .parceiros-carousel-container{
@@ -628,17 +628,51 @@ footer .info-row02  div figure{
 @media only screen and (min-width: 320px) {
     body{
         overflow-x: hidden;
+    } 
+    
+    .txt-box h1{
+        font-size: 2rem;
+    }
+    
+    .txt-box p{
+        font-size: 1rem;
+    }
+
+    .section-header h2{
+        font-size: 1rem;
+    }
+
+    /* 1st Section hero */
+    .txtHero h1{
+        font-size: 2.3rem;
+    }
+    
+    .txtHero p{
+        font-size: 1rem;
+    }
+
+    .txtHero h1 .hero-span{
+        color: var(--hero-green);
+        background-color: transparent;
+    } 
+    
+    .hero-search input{
+        padding: 17px;
+        font-size: 1rem;
+    }
+
+    .hero-search button{
+        padding: 13px;
+    }
+
+    .hero-search button img{
+        width: 33px;
     }
 
     /* 2nd section ------------------- */
     .sobre-nos-section{
-        margin-top: 470px;
-    }
-    
-    .txtImg02 span{
-        width: 70%;
-        font-size: 1.8rem;
-    }
+        margin-top: 373px;
+    }   
 
 }
 
@@ -654,7 +688,7 @@ footer .info-row02  div figure{
 @media only screen and (min-width: 360px) {
     /* 2nd section ------------------- */
     .sobre-nos-section{
-        margin-top: 470px;
+        margin-top: 370px;
     }
 }
 
