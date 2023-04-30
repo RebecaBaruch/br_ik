@@ -671,7 +671,7 @@ footer .info-row02  div figure{
 
     /* 2nd section ------------------- */
     .sobre-nos-section{
-        margin-top: 373px;
+        margin-top: 473px;
     }   
 
 }
@@ -688,7 +688,7 @@ footer .info-row02  div figure{
 @media only screen and (min-width: 360px) {
     /* 2nd section ------------------- */
     .sobre-nos-section{
-        margin-top: 370px;
+        margin-top: 470px;
     }
 }
 
@@ -1103,16 +1103,56 @@ footer .info-row02  div figure{
 
 /* 1024px */
 @media only screen and (min-width: 1024px) {
+
+    .txt-box h1{
+        font-size: 2.3rem;
+    }
+    
+    .txt-box p{
+        font-size: 1.1rem;
+    }
+
+    .section-header h2{
+        font-size: 1.2rem;
+    }
+
     /* 2nd section ------------------- */
     .sobre-nos-section{
-        margin-top: 370px;
+        margin-top: 333px;
+    }
+
+    /* 4th section ------------------- */
+    .imovel-cards-container{
+        gap: 40px;
+        width: 100%;
+        /* overflow: overlay; */
+    }
+}
+
+/* 1366px */
+@media only screen and (min-width: 1366px) {
+    /* 2nd section ------------------- */
+    .sobre-nos-section{
+        margin-top: 373px;
     }
 }
 
 /* 1440px */
 @media only screen and (min-width: 1440px) {
+    .txt-box h1{
+        font-size: 2.7rem;
+    }
+    
+    .txt-box p{
+        font-size: 1.3rem;
+    }
+
+    .section-header h2{
+        font-size: 1.3rem;
+    }
+
     /* 2nd section ------------------- */
     .sobre-nos-section{
-        margin-top: 273px;
+        margin-top: 173px;
     }
 }
