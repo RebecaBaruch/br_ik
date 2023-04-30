@@ -462,19 +462,29 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 43,
-        slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
+        slidesPerView: 2,
+        spaceBetween: 10,
         pagination: {
             el: ".swiper-pagination",
-            clickable: true
+            clickable: true,
+        },
+
+        breakpoints: {
+            600: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            800: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            }
         },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-        },
+        }
         });
     </script>
 
