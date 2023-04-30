@@ -78,19 +78,34 @@ button{
 .txtHero h1 span{
     background-color: transparent;
 }
+/*------------------------------------------*/
 
 /* ---- mobile first ---- */
+/*  Section Hero */
 main{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    gap: 20%;
     align-items: center;
+
     position: relative;
+    width: 100vw;
+    height: 145vh;
+    padding: 0 !important;
+    margin: 0;
+    background-color: brown;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    gap: 17%;
+    align-items: center;
 
     padding: 10% 10% 0 10%;
-    height: 100vh;
-    background: url("../img/hero-section-bg.svg") left top no-repeat;
+    height: 95vh;
+    width: 100vw;
+    /* background: url("../img/hero-section-bg.svg") left top no-repeat; */
+    background-color: darkgreen;
 }
 
 nav{
@@ -106,8 +121,6 @@ nav .logo{
     height: 100%;
 }
 
-/*------------------------------------------*/
-/*  Section Hero */
 .bg-disco{
     position: absolute;
     height: 48%;
@@ -193,6 +206,8 @@ nav .logo{
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    position: absolute;
+    bottom: 0;
     filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.1));
 }
 
@@ -224,7 +239,6 @@ nav .logo{
     justify-content: center;
     flex-direction: column;
     gap: 50px;
-    margin-top: 300px;
 }
 
 .sobre-nos-section .txt-box{
@@ -669,42 +683,74 @@ footer .info-row02  div figure{
         width: 33px;
     }
 
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 473px;
-    }   
+    main{
+        height: 173vh;
+    }
+    
+    .hero-section{
+        gap: 10%;
+        height: 95vh;
+    }
 
+    /* --> cards from hero section */
+    .data-cards-container{
+        width: 90%;
+    }
+
+    .data-card{
+        padding: 10px;
+        width: 100%;
+        height: 153px;
+    }
+
+    .data-card h1{
+        font-size: 1.2rem;
+    }
+
+    .data-card{
+        font-size: 1rem;
+    }
 }
 
 /* 360px */
 @media only screen and (min-width: 360px) {
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 370px;
+    /* 1st Section hero */
+    main{
+        height: 143vh;
     }
-}
+    
+    .hero-section{
+        gap: 10%;
+        height: 95vh;
+    }
 
-/* 375px */
-@media only screen and (min-width: 360px) {
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 470px;
+    .bg-disco{
+        top: 10%;
     }
 }
 
 /* 412px */
 @media only screen and (min-width: 412px) {
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 233px;
+    /* 1st Section hero */
+    main{
+        height: 130vh;
+    }
+    
+    .hero-section{
+        gap: 23%;
+        height: 90vh;
+    }
+
+    .bg-disco{
+        top: 13%;
     }
 }
 
 /* 425px */
 @media only screen and (min-width: 425px) {
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 373px;
+   /* 1st Section hero */
+    main{
+        height: 130vh;
     }
 }
 
@@ -731,11 +777,6 @@ footer .info-row02  div figure{
     
     .hero-search button{
         padding: 33px;
-    }
-
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 70px;
     }
     
     .txtImg02 span{
@@ -806,6 +847,29 @@ footer .info-row02  div figure{
 /*tablet response (768px)*/
 @media only screen and (min-width: 768px) {
     /*hero section*/
+    /* 1st Section hero */
+    main{
+        height: 110vh;
+    }
+    
+    .hero-section{
+        gap: 20%;
+        height: 80vh;
+    }
+
+    .bg-disco{
+        top: 17%;
+    }
+
+    /* --> cards from hero section */
+    .data-card h1{
+        font-size: 1.5rem;
+    }
+
+    .data-card{
+        font-size: 1.2rem;
+    }
+
     .txtHero{
         width: 90%;
     }
@@ -829,10 +893,6 @@ footer .info-row02  div figure{
     }
 
     /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 430px;
-    }
-    
     .txtImg02 span{
         width: 70%;
         font-size: 1.8rem;
@@ -900,23 +960,72 @@ footer .info-row02  div figure{
 
 /* 800px */
 @media only screen and (min-width: 800px) {
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 70px;
+    /* 1st Section hero */
+    main{
+        height: 100vh;
+    }
+
+    .hero-section{
+        gap: 20%;
+        height: 73vh;
+    }
+
+    .bg-disco{
+        top: 17%;
+    }
+
+    /* --> cards from hero section */
+    .data-cards-container{
+        width: 90%;
+    }
+
+    .data-card{
+        width: 100%;
+        height: 153px;
+    }
+
+    .data-card h1{
+        font-size: 1.5rem;
+    }
+
+    .data-card{
+        font-size: 1.2rem;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     /*hero section*/
+    /* 1st Section hero */
     main{
-        padding: 5% 10% 0 10%;
+        height: 90vh;
     }
     
+    .hero-section{
+        gap: 20%;
+        height: 73vh;
+    }
+
     .bg-disco{
-        height: 78%;
-        top: 14%;
-        left: -5%;
+        top: 17%;
+    }
+
+    /* --> cards from hero section */
+    .data-cards-container{
+        width: 90%;
+    }
+
+    .data-card{
+        width: 100%;
+        height: 153px;
+    }
+
+    .data-card h1{
+        font-size: 1.5rem;
+    }
+
+    .data-card{
+        font-size: 1.2rem;
     }
 
     .txtHero{
@@ -945,7 +1054,6 @@ footer .info-row02  div figure{
         flex-direction: row;
         gap: 130px;
         align-items: end;
-        margin-top: 273px;
         padding: 10% 10% 0 10%;
     }
 
@@ -1103,6 +1211,37 @@ footer .info-row02  div figure{
 
 /* 1024px */
 @media only screen and (min-width: 1024px) {
+    /* 1st Section hero */
+    main{
+        height: 123vh;
+    }
+
+    .hero-section{
+        gap: 20%;
+        height: 93vh;
+    }
+
+    .bg-disco{
+        top: 17%;
+    }
+
+    /* --> cards from hero section */
+    .data-cards-container{
+        width: 90%;
+    }
+
+    .data-card{
+        width: 100%;
+        height: 153px;
+    }
+
+    .data-card h1{
+        font-size: 1.5rem;
+    }
+
+    .data-card{
+        font-size: 1.2rem;
+    }
 
     .txt-box h1{
         font-size: 2.3rem;
@@ -1116,9 +1255,51 @@ footer .info-row02  div figure{
         font-size: 1.2rem;
     }
 
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 333px;
+    /* 4th section ------------------- */
+    .imovel-cards-container{
+        gap: 40px;
+        width: 100%;
+        /* overflow: overlay; */
+    }
+}
+
+/* 1280px */
+@media only screen and (min-width: 1280px) {
+    /* 1st Section hero */
+    main{
+        height: 133vh;
+    }
+
+    .hero-section{
+        gap: 20%;
+        padding: 5% 10% 0 10%;
+        height: 93vh;
+    }
+
+    .bg-disco{
+        top: 17%;
+    }
+
+    /* --> cards from hero section */
+    .data-cards-container{
+        width: 80%;
+    }
+
+    .data-card{
+        width: 100%;
+        height: 153px;
+    }
+    
+    .txt-box h1{
+        font-size: 2.3rem;
+    }
+    
+    .txt-box p{
+        font-size: 1.1rem;
+    }
+
+    .section-header h2{
+        font-size: 1.2rem;
     }
 
     /* 4th section ------------------- */
@@ -1131,14 +1312,47 @@ footer .info-row02  div figure{
 
 /* 1366px */
 @media only screen and (min-width: 1366px) {
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 373px;
+    /* 1st Section hero */
+    main{
+        height: 133vh;
+    }
+    
+    .hero-section{
+        gap: 20%;
+        height: 95vh;
+    }
+
+    .bg-disco{
+        top: 17%;
+    }
+
+    /* --> cards from hero section */
+    .data-cards-container{
+        width: 73%;
+    }
+
+    .data-card{
+        width: 100%;
+        height: 153px;
+    }
+
+    .data-card h1{
+        font-size: 1.5rem;
+    }
+
+    .data-card{
+        font-size: 1.2rem;
     }
 }
 
 /* 1440px */
 @media only screen and (min-width: 1440px) {
+    /* 1st Section hero */
+    /* --> cards from hero section */
+    .data-cards-container{
+        width: 80%;
+    }
+
     .txt-box h1{
         font-size: 2.7rem;
     }
@@ -1151,8 +1365,4 @@ footer .info-row02  div figure{
         font-size: 1.3rem;
     }
 
-    /* 2nd section ------------------- */
-    .sobre-nos-section{
-        margin-top: 173px;
-    }
 }
