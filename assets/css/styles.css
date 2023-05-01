@@ -415,7 +415,7 @@ nav .logo{
 }
 
 .tipo-hover{
-    display: none;
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 53px;
@@ -427,6 +427,7 @@ nav .logo{
     height: 100%;
     background-color: var(--green-markdown);
     transition: 1s all ease-in-out;
+    opacity: 0;
 }
 
 .lot-card-content{
@@ -463,13 +464,13 @@ nav .logo{
 }
 
 .urban-card:hover .urban-hover{
-    display: flex;
-    transition: 1s all ease-in-out;
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
 }
 
 .rural-card:hover .rural-hover{
-    display: flex;
-    transition: 1s all ease-in-out;
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
 }
 
 /*seção 05*/
