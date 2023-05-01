@@ -158,6 +158,10 @@ main{
     background-color: darkgreen;
 }
 
+.hero-gallery{
+    display: none;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -391,6 +395,7 @@ nav .logo{
     flex-direction: row;
     gap: 10px;
     align-items: end;
+    position: relative;
     padding: 40px 25px;
     width: 250px;
     height: 350px;
@@ -407,6 +412,64 @@ nav .logo{
 .rural-card{
     margin-right: 30px;
     background: no-repeat url("../img/imovel-bgCard02.svg") 100%;
+}
+
+.tipo-hover{
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 53px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--green-markdown);
+    transition: 1s all ease-in-out;
+}
+
+.lot-card-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 13px;
+    font-size: 1.1rem;
+    font-weight: light;
+    transition: 1s all ease-in-out;
+}
+
+.lot-card-header{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.lot-card-content img{
+    width: 53px;
+}
+
+.lot-card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.lot-card-footer a{
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.urban-card:hover .urban-hover{
+    display: flex;
+    transition: 1s all ease-in-out;
+}
+
+.rural-card:hover .rural-hover{
+    display: flex;
+    transition: 1s all ease-in-out;
 }
 
 /*seção 05*/
