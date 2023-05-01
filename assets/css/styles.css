@@ -142,7 +142,6 @@ main{
     height: 145vh;
     padding: 0 !important;
     margin: 0;
-    background-color: brown;
 }
 
 .hero-section{
@@ -154,8 +153,7 @@ main{
     padding: 10% 10% 0 10%;
     height: 95vh;
     width: 100vw;
-    /* background: url("../img/hero-section-bg.svg") left top no-repeat; */
-    background-color: darkgreen;
+    background: url("../img/hero-section-bg.svg") left top no-repeat;
 }
 
 .hero-gallery{
@@ -494,7 +492,7 @@ nav .logo{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 43px; */
     align-items: center;
     width: 80%;
 }
