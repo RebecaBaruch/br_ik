@@ -81,6 +81,54 @@ button{
 /*------------------------------------------*/
 
 /* ---- mobile first ---- */
+.menu-btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.drop-menu{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 130px 73px;
+    height: 100vh;
+    z-index: 10;
+    list-style: none;
+    background-color: #1A1F23; 
+    transition: 0.5s transform ease-out;
+    transform: translateX(100%);
+}
+
+.drop-menu-open{
+    transform: translateX(0);
+}
+
+.drop-menu li a{
+    text-decoration: none;   
+    color: white;
+}
+
+.close-btn{
+    position: absolute;
+    top: 40px;
+    right: 47px;
+    width: 43px;
+    height: 43px;
+}
+
+.close-btn img{
+    width: 100%
+}
+
+.nav-links{
+    display: none;
+}
+
 /*  Section Hero */
 main{
     display: flex;
@@ -404,7 +452,6 @@ nav .logo{
 .parceiro-card .parceiro-content{
     display: flex;
     gap: 15px;
-    background-color: yellow;
 }
 
 .parceiro-card .parceiro-logo{
@@ -1226,6 +1273,37 @@ footer .info-row02  div figure{
 /* 1024px */
 @media only screen and (min-width: 1024px) {
     /* 1st Section hero */
+    .menu-btn{
+        display: none;
+    }
+
+    .nav-links{
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        gap: 53px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links{
+        list-style: none;
+    }
+
+    .nav-links li a{
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: light;
+        color: white;
+    }
+
+    .comprar-link{
+        padding: 10px 15px;
+        border: 2px solid white;
+        border-radius: 53px;
+        background-color: var(--green-markdown);
+    }
+
     main{
         height: 123vh;
     }

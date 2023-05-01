@@ -19,25 +19,30 @@
                 <figure class="logo">
                     <img src="./assets/img/Logo.svg" alt="Brick logo">
                 </figure>
+
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#empresa">Empresa</a></li>
+                    <li><a href="#imoveis">Imóveis</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="comprar-link"><a href="#">Comprar um imóvel</a></li>
+                </ul>
+
+                <button class="menu-btn"><img src="./assets/img/menu.svg" alt="drop-menu-button"></button>
     
                 <!-- mobile menu -->
-                <!-- <div class="menu">
-                    <div class="burger" onclick="menuOnClick()">
-                        <div class="burger-bar bar01"></div>
-                        <div class="burger-bar bar02"></div>
-                        <div class="burger-bar bar03"></div>
-                    </div>
-                    <div class="nav-bur">
-                        <ul>
-                            <li><a href="#inicio">Início</a></li>
-                            <li><a href="#empresa">Empresa</a></li>
-                            <li><a href="#imoveis">Imóveis</a></li>
-                            <li><a href="#avaliacoes">zAvaliações</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                            <li><a href="#">Comprar um<br> imóvel</a></li>
-                        </ul>
-                    </div>
-                </div> -->
+                <ul class="drop-menu" id="drop-menu">
+                        <i class="close-btn">
+                            <img src="./assets/img/x.png" alt="close-butotn">
+                        </i>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#empresa">Empresa</a></li>
+                        <li><a href="#imoveis">Imóveis</a></li>
+                        <li><a href="#avaliacoes">Avaliações</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">Comprar um<br> imóvel</a></li>
+                </ul>
             </nav>
     
             <!-- bg do dropdown menu -->
@@ -481,7 +486,7 @@
         
             800: {
               slidesPerView: 2,
-              spaceBetween: 50
+              spaceBetween: 70
             },
 
             1024: {
