@@ -473,11 +473,11 @@ nav .logo{
 
 /*seção 05*/
 .parceiros-section{
-    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 50px;
+    position: relative;
     padding: 130px 10%;
     margin-top: 130px;
     color: white;
@@ -577,6 +577,7 @@ nav .logo{
     justify-content: center;
     flex-direction: column;
     gap: 50px;
+    position: relative;
     padding: 130px 10%;
     margin-top: -1px;
     color: white;
@@ -593,39 +594,108 @@ nav .logo{
     font-size: 2rem;
 }
 
+
+
 .avaliacoes-carousel-container{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    gap: 40px;
+    /* flex-direction: row; */
+    /* gap: 40px; */
     align-items: center;
+    position: relative;
+    width: 100%;
 }
 
+.avali-guard{
+    width: 100%;
+}
 .avaliacoes-cards-container{
     display: flex;
     justify-content: center;
-    width: fit-content;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    height: 500px;
 }
 
-.avaliacoes-cards-container .avaliacao-card{
+.avaliacao-card{
     display: flex;
     justify-content: start;
     flex-direction: column;
     gap: 18px;
     align-items: center;
-    padding: 70px 37px;
+    padding: 40px 37px;
+    width: 700px !important;
+    height: 300px !important;
     border: 1px solid #6A9C31;
     background-color: #3A3A3A;
 }
 
-.avaliacoes-cards-container .avaliacao-card header{
+.splide__list{
+    display: flex;
+    flex-direction: row;
+    gap: 30px !important;
+    padding: 0;
+    list-style: none;
+}
+  
+/* .splide__pagination{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+} */
+
+  /* Generic Slide */
+  .splide__slide div{
+      display: block;
+      transition: transform 400ms;
+      transform: scale(.9);
+      transform-origin: center center;
+  }
+  
+  /* Arrow Tweaks for Accessibility */
+  .splide .splide__arrow {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    transform: none;
+    border-radius: unset;
+    width: 73px;
+    height: 100%;
+    opacity: .9;
+    z-index: 10;
+  }
+
+  .splide .splide__arrow  svg {
+    filter: invert(1);
+    width: 24px;
+    height: 24px;
+  }
+
+  .splide__arrow.splide__arrow--prev {
+    left: 0;
+    transform: rotate(180deg);
+    background: transparent;
+  }
+  .splide__arrow.splide__arrow--next {
+    right: 0;
+    background: transparent ;
+  }
+
+.avaliacao-card header{
     display: flex;
     flex-direction: column;
     gap: 17px;
     width: 100%;
 }
 
-.avaliacoes-cards-container .avaliacao-card figure{
+.avaliacao-card figure{
     width: 57px;
     height: 57px;
     border-radius: 50%;
@@ -633,20 +703,58 @@ nav .logo{
     background-color: rgb(184, 184, 184);
 }
 
-.avaliacoes-cards-container .avaliacao-card header h1{
-    font-size: 1.7rem;
+.avaliacao-card header h1{
+    font-size: 1.5rem;
 }
 
-.avaliacoes-cards-container .avaliacao-card header h2{
-    font-size: 1rem;
+.avaliacao-card header h2{
+    font-size: 0.8rem;
 }
 
 .avaliacao-card header h2{
     color: var(--hero-green);
 }
 
-.avaliacoes-cards-container .avaliacao-card header .subLocal{
+.avaliacao-card header .subLocal{
     font-weight: 100;
+}
+
+/* pagination */
+.avali-pagination{
+    position: absolute;
+    top: 0px;
+}
+  
+.avali-pagination-bullet{
+    position: relative;
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--hero-green);
+    border-radius: 50%;
+    background: var(--hero-green);
+    --swiper-pagination-bullet-inactive-opacity: 0.1;
+}
+  
+.avali-button-next, 
+.avali-button-prev{
+    position: absolute;
+    top: 35%; 
+    opacity: 0.7;
+    color: var(--hero-green);
+    transition: all 0.3s ease;
+}
+
+.avali-button-prev{
+    left: 5%;
+}
+
+.avali-button-next{
+    right: 5%;
+}
+
+.avali-button-next:hover, .avali-button-prev:hover{
+    opacity: 1;
+    color: var(--hero-green);
 }
 
 /*seção 07*/

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Br_ik - Gerenciamento de lotes e loteamentos</title>
     
+    <!-- Link to the Splide CDN -->
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
     <!-- ===== Link Swiper's CSS ===== -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
 </head>
 <body>
     <main>
@@ -382,13 +383,6 @@
                 </div>
                
             </div>
-
-            <!-- <div class="carousel-stepper">
-                <div class="stepper marked-stepper"></div>
-                <div class="stepper"></div>
-                <div class="stepper"></div>
-            </div> -->
-
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -407,29 +401,63 @@
             </h1>
         </header>
 
-        <div class="avaliacoes-carousel-container">
-            <div class="avaliacoes-cards-container">
-                <div class="avaliacao-card">
-                    <header>
-                        <figure>
-                            <img src="" alt="">
-                        </figure>
-                        <article>
-                            <h1>Marta Gusmão</h1>
-                            <h2>Proprietária do Jardins BR</h2>
-                            <h2 class="subLocal">Registro/SP</h2>
-                        </article>
-                    </header>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum imperdiet tortor, nec viverra metus semper eget. Sed convallis commodo lacus a pharetra. 
-                    </p>
-                </div>
-            </div>
-            
-            <div class="carousel-stepper">
-                <div class="stepper marked-stepper"></div>
-                <div class="stepper"></div>
-                <div class="stepper"></div>
+        <!-- avaliacoes-carousel-container  -->
+        <div id="splide" class="splide">
+            <div class="splide__track">
+                <!-- avaliacoes-cards-container   -->
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="avaliacao-card">
+                            <header>
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                                <article>
+                                    <h1>Marta Gusmão</h1>
+                                    <h2>Proprietária do Jardins BR</h2>
+                                    <h2 class="subLocal">Registro/SP</h2>
+                                </article>
+                            </header>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum imperdiet tortor, nec viverra metus semper eget. Sed convallis commodo lacus a pharetra. 
+                            </p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="avaliacao-card">
+                            <header>
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                                <article>
+                                    <h1>Izabela Baruch</h1>
+                                    <h2>Proprietária do Jardins BR</h2>
+                                    <h2 class="subLocal">Registro/SP</h2>
+                                </article>
+                            </header>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum imperdiet tortor, nec viverra metus semper eget. Sed convallis commodo lacus a pharetra. 
+                            </p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="avaliacao-card">
+                            <header>
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                                <article>
+                                    <h1>Rebeca Baruch</h1>
+                                    <h2>Proprietária do Jardins BR</h2>
+                                    <h2 class="subLocal">Registro/SP</h2>
+                                </article>
+                            </header>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum imperdiet tortor, nec viverra metus semper eget. Sed convallis commodo lacus a pharetra. 
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -514,47 +542,19 @@
         </div>
     </footer>
 
+    <!-- App JS -->
     <script src="./assets/js/app.js "></script>
+    <!-- Form JS -->
     <script src="./assets/js/form.js "></script>
+
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9.2.4/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            },
-
-            600: {
-              slidesPerView: 2,
-              spaceBetween: 700
-            },
-        
-            800: {
-              slidesPerView: 2,
-              spaceBetween: 70
-            },
-
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 43
-            }
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        }
-        });
-    </script>
+    <script type="text/javascript" src="./assets/js/swiper.js"></script>
+    <!-- Initialize Splide -->
+    <script type="text/javascript" src="./assets/js/splide.js"></script>
 
 
 </body>
