@@ -214,41 +214,26 @@ nav .logo{
 
 .hero-search{
     display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 17px;
     width: fit-content;
     overflow: hidden;
 
-    background: rgba(255, 255, 255, 0.13);
+    color: white;
+    text-decoration: none;
+    background-color: var(--green-markdown);
     box-shadow: 10px 0px 50px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(2px);
-    border-radius: 7px;
-}
-
-.hero-search input{
-    padding: 18px;
-    font-size: 1rem;
-    background-color: transparent;
+    border-radius: 33px;
+    border: none;
     outline: none;
-    color: white;
 }
 
-.hero-search input::placeholder{/* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-weight: lighter;
-    color: var(--hero-green);
-}
-
-.hero-search input:-ms-input-placeholder{/* Internet Explorer 10-11 */
-    font-weight: lighter;
-    color: var(--hero-green);
-}
-
-.hero-search input::-ms-input-placeholder{/* Microsoft Edge */
-    font-weight: lighter;
-    color: var(--hero-green);
-}
-
-.hero-search button{
-    padding: 15px;
-    background-color: var(--green-markdown);
+.hero-search h1{
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* --> cards from hero section */
@@ -398,6 +383,8 @@ nav .logo{
     width: 250px;
     height: 350px;
     color: white;
+    text-decoration: none;
+    cursor: pointer;
 
     /* scrollbar-width: thin; */
     /* scrollbar-color: var(--green-markdown); */
@@ -592,9 +579,7 @@ nav .logo{
 
 .avali-section .section-header h1{
     font-size: 2rem;
-}
-
-
+} 
 
 .avaliacoes-carousel-container{
     display: flex;
@@ -639,28 +624,16 @@ nav .logo{
     list-style: none;
 }
   
-/* .splide__pagination{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-} */
-
-  /* Generic Slide */
-  .splide__slide div{
-      display: block;
-      transition: transform 400ms;
-      transform: scale(.9);
-      transform-origin: center center;
-  }
+/* Generic Slide */
+.splide__slide div{
+    display: block;
+    transition: transform 400ms;
+    transform: scale(.9);
+    transform-origin: center center;
+}
   
-  /* Arrow Tweaks for Accessibility */
-  .splide .splide__arrow {
+/* Arrow Tweaks for Accessibility */
+.splide .splide__arrow {
     position: absolute;
     top: 10%;
     bottom: 0;
@@ -670,23 +643,23 @@ nav .logo{
     height: 100%;
     opacity: .9;
     z-index: 10;
-  }
+}
 
-  .splide .splide__arrow  svg {
+.splide .splide__arrow  svg {
     filter: invert(1);
     width: 24px;
     height: 24px;
-  }
+}
 
-  .splide__arrow.splide__arrow--prev {
+.splide__arrow.splide__arrow--prev {
     left: 0;
     transform: rotate(180deg);
     background: transparent;
-  }
-  .splide__arrow.splide__arrow--next {
+}
+.splide__arrow.splide__arrow--next {
     right: 0;
     background: transparent ;
-  }
+}
 
 .avaliacao-card header{
     display: flex;
@@ -929,6 +902,11 @@ footer .info-row02  div figure{
 
     .data-card{
         font-size: 1rem;
+    }
+
+    /* 4th section */
+    .tipo-hover{
+        display: none;
     }
 }
 
@@ -1365,6 +1343,10 @@ footer .info-row02  div figure{
 
     .imovel-card h1{
         font-size: 2rem;
+    }
+
+    .tipo-hover{
+        display: flex;
     }
 
     /*7th section --------------------------------- */
