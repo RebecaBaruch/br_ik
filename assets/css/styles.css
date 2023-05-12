@@ -369,7 +369,6 @@ nav .logo{
     align-items: center;
     width: 100%;
     overflow-x: scroll;
-    /* overflow: overlay; */
 }
 
 .imovel-card{
@@ -379,7 +378,7 @@ nav .logo{
     gap: 10px;
     align-items: end;
     position: relative;
-    padding: 40px 25px;
+    /* padding: 40px 25px; */
     width: 250px;
     height: 350px;
     color: white;
@@ -388,6 +387,16 @@ nav .logo{
 
     /* scrollbar-width: thin; */
     /* scrollbar-color: var(--green-markdown); */
+}
+
+.lot-card-title{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
 }
 
 .urban-card{
@@ -413,6 +422,18 @@ nav .logo{
     background-color: var(--green-markdown);
     transition: 1s all ease-in-out;
     opacity: 0;
+}
+
+.tipos-link{
+    display: flex;
+    justify-content: end;
+    gap: 13px;
+    align-items: end;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
 }
 
 .lot-card-content{
@@ -906,7 +927,7 @@ footer .info-row02  div figure{
 
     /* 4th section */
     .tipo-hover{
-        display: none;
+        opacity: 0;
     }
 
     /* 6th section */
@@ -1002,7 +1023,7 @@ footer .info-row02  div figure{
     }
     
     .imovel-card{
-        padding: 40px 25px;
+        /* padding: 40px 25px; */
         width: 293px;
         height: 450px;
         color: white;
@@ -1123,7 +1144,7 @@ footer .info-row02  div figure{
     }
     
     .imovel-card{
-        padding: 40px 25px;
+        /* padding: 40px 25px; */
         width: 293px;
         height: 450px;
         color: white;
@@ -1348,7 +1369,7 @@ footer .info-row02  div figure{
     }
     
     .imovel-card{
-        padding: 70px 53px;
+        /* padding: 70px 53px; */
         width: 533px;
         height: 473px;
         color: white;
@@ -1358,8 +1379,20 @@ footer .info-row02  div figure{
         font-size: 2rem;
     }
 
-    .tipo-hover{
+    .tipos-link{
         display: flex;
+        justify-content: end;
+        gap: 13px;
+        align-items: end;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-decoration: none;
+    }
+
+    .tipo-hover:hover{
+        opacity: 1;
     }
     
     /* 6th section */
